@@ -1,1 +1,60 @@
+:root {
+  --primary-color: #ff7e1d;
+  --secondary-color: #f5f2ed;
+  --background-color: #ffce00;
+}
 
+body {
+  background-color: var(--background-color);
+}
+
+.App {
+  background-color: var(--secondary-color);
+  max-width: 700px;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.footNote {
+  font-size: 0.8rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+.footNote a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 200ms ease;
+}
+.footNote a:hover {
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  li {
+    text-align: center;
+  }
+  .container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .App {
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}

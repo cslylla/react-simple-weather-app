@@ -3,14 +3,19 @@
   --secondary-color: #f5f2ed;
   --background-color: #ffce00;
 }
+html {
+  background-image: url(./images/background.png);
+}
 
 body {
-  font-family: "Raleway", sans-serif;
   background-color: var(--background-color);
-  background-image: url(./images/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.font-link {
+  font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 768px) {
