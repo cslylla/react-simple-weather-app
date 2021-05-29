@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
+import FormatDayLong from "./FormatDayLong";
+import FormatTime from "./FormatTime";
 import sunrise from "./images/sunrise.png";
 import sunset from "./images/sunset.png";
 import Quote from "./Quote";
@@ -8,8 +10,7 @@ import "./Weather.css";
 export default function Weather(props){
     const [weatherData, setWeatherData]= useState({ready:false});
     
-    function handleResponse(response){
-    console.log(response.data); 
+    function handleResponse(response){ 
     setWeatherData({
         ready: true,
         city: response.data.name,
@@ -18,11 +19,11 @@ export default function Weather(props){
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.main.humidity,
         feelsLike: Math.round(response.data.main.feels_like),
-        time: response.data.dt*1000,
-        sunrise: response.data.sys.sunreise*1000,
-        sunset: response.data.sys.sunset*1000,
+        currentTime:(response.data.dt*1000),
+        sunrise:(response.data.sys.sunrise*1000),
+        sunset:(response.data.sys.sunset*1000),
         icon: response.data.weather[0].icon,
-    });   
+    });  
     }
 
     if (weatherData.ready){
@@ -53,15 +54,15 @@ export default function Weather(props){
   <div className="col-md-4 currentCity">
   <ul className="data">
     <li className="city"><h1>{weatherData.city}</h1></li>
-  <li><h2 className="text-capitalize">{weatherData.description}</h2></li>
-  <li><small>Last updated:</small></li>
-  <li className="day">{weatherData.time}</li>
-  <li className="time">16:02</li>
+    <li><h2 className="text-capitalize">{weatherData.description}</h2></li>
+    <li><small>Last updated:</small></li>
+    <li className="day"><FormatDayLong timeStamp={weatherData.currentTime} /></li>
+    <li className="time"><FormatTime timeStamp={weatherData.currentTime} /></li>
   </ul>
   </div>
 
   <div className="col-md-3 m-0 p-0 temperature">
-  <span className="currentTemperature">{weatherData.temperature}</span>
+    <span className="currentTemperature">{weatherData.temperature}</span>
   <span className="units">
   <a href="/" className="celsius active" title="Switch temperature to Celsius">°C{" "}</a>{" "}
     |
@@ -75,13 +76,11 @@ export default function Weather(props){
 
   <div className="col-md-3">
   <ul className="details">
-  <li><span>Feels like: {weatherData.feelsLike}°C</span></li>
-  <li><span>Wind: {weatherData.wind}km/h</span></li>
-  <li><span>Humidity: {weatherData.humidity}%</span></li>
-  <li><img src={sunrise} alt="Sunrise symbol" width="45"/>{weatherData.sunreise}
-  </li>
-  <li><img src={sunset} alt="Sunset symbol" width="45"/>{weatherData.sunset}
-  </li>
+    <li><span>Feels like: {weatherData.feelsLike}°C</span></li>
+    <li><span>Wind: {weatherData.wind}km/h</span></li>
+    <li><span>Humidity: {weatherData.humidity}%</span></li>
+    <li><img src={sunrise} alt="Sunrise symbol" width="45"/> <FormatTime timeStamp={weatherData.sunrise} /></li>
+  <li><img src={sunset} alt="Sunset symbol" width="45"/><FormatTime timeStamp={weatherData.sunset} /></li>
   </ul>
   </div>
   </div>
