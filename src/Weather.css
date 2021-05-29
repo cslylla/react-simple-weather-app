@@ -3,7 +3,13 @@
   --secondary-color: #f5f2ed;
   --background-color: #ffce00;
 }
-
+body {
+  background-image: url(./images/background.png);
+  background-color: var(--background-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .Weather h1 {
   font-weight: 900;
   text-align: left;
@@ -141,6 +147,18 @@
 
 .Weather .units .active:hover {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-image: none;
+  }
 }
 
 @media (max-width: 768px) {

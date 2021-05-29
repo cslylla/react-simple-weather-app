@@ -7,7 +7,7 @@ export default function App() {
     <div className="container font-link">
       <Weather />
 <footer>
-    <p>
+    <p className="m-0">
       This is an <a href="https://github.com/cslylla" target="_blank" title="Open Lilla`s GitHub profile">open-sourced</a> project coded by <a href="https://www.linkedin.com/in/lilla-csanaky-a850a617/" target="_blank" title="Open Lilla`s LinkedIn profile" >cslylla</a> 
     </p>
 

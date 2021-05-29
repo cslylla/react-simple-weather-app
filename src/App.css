@@ -1,34 +1,26 @@
-:root {
-  --primary-color: #ff7e1d;
-  --secondary-color: #f5f2ed;
-  --background-color: #ffce00;
-}
-
-body {
-  background-color: var(--background-color);
-}
-
 .App {
   background-color: var(--secondary-color);
   max-width: 700px;
-  margin-left: 1rem;
+  margin-left: 3rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
   padding: 2rem;
   border-radius: 15px;
 }
 
-.footNote {
+.App footer {
   font-size: 0.8rem;
   padding-top: 2rem;
+  text-align: center;
   margin: 0 auto;
 }
-.footNote a {
+
+.App footer a {
   text-decoration: none;
   color: #000000;
   transition: all 200ms ease;
 }
-.footNote a:hover {
+.App footer a:hover {
   font-weight: 800;
   color: var(--primary-color);
 }

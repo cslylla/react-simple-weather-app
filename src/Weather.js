@@ -12,10 +12,10 @@ export default function Weather(){
     <div className ="col-md-8 p-0 m-0"> 
     <form>
     <div className="row">
-    <div className ="col-md-8 p-0 m-0"> 
+    <div className ="col-md-6 p-0 m-0"> 
       <input type="search" placeholder="Enter a city" autoFocus="on" autoComplete="off" className="form-control"/>
     </div>
-    <div className="col-md-4 p-0 m-0">
+    <div className="col-md-6 p-0 m-0">
       <input type="submit" value="Search" title="Search for city" className="button submit" />
      </div>
     </div>
