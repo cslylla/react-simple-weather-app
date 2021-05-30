@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #ff7e1d;
+  --secondary-color: #f5f2ed;
+  --background-color: #ffce00;
+}
+
 .App {
   background-color: var(--secondary-color);
   max-width: 700px;

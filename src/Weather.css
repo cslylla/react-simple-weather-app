@@ -3,6 +3,7 @@
   --secondary-color: #f5f2ed;
   --background-color: #ffce00;
 }
+
 body {
   background-image: url(./images/background.png);
   background-color: var(--background-color);
@@ -10,34 +11,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.Weather h1 {
-  font-weight: 900;
-  text-align: left;
-}
 
 .Weather header {
   padding: 1rem;
   margin: 0 auto;
   text-align: center;
-}
-
-.Weather li.city {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.Weather li.day,
-.Weather li.time {
-  font-size: 2rem;
-}
-
-.Weather .data {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: left;
 }
 
 .Weather .button {
@@ -69,35 +47,13 @@ body {
   color: black;
 }
 
-.Weather .city {
-  text-transform: capitalize;
-}
-
-.Weather .currentPicture {
-  color: var(--primary-color);
-  font-size: 6rem;
-}
-
-.Weather .currentTemperature {
-  font-size: 3.5rem;
-  font-weight: 900;
-  text-align: right;
-}
-
-.Weather .details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
 .Weather .form-control:focus {
   outline: none !important;
   border: 1px solid var(--primary-color);
   box-shadow: 0 0 10px var(--primary-color);
 }
 
-.forecastDay {
+.Weather .forecastDay {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 auto;
