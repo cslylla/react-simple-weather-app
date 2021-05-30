@@ -1,0 +1,18 @@
+.WeatherForecastDay {
+  text-align: center;
+}
+
+.WeatherForecastDay .WeatherForecast-day {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.WeatherForecastDay .WeatherForecast-temeratures {
+  font-size: 1.5rem;
+}
+
+.WeatherForecastDay .WeatherForecast-temerature-max {
+  font-weight: bold;
+}

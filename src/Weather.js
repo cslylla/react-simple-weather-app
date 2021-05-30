@@ -22,6 +22,7 @@ export default function Weather(props){
         sunrise:(response.data.sys.sunrise*1000),
         sunset:(response.data.sys.sunset*1000),
         icon: response.data.weather[0].icon,
+        coordinates: response.data.coord
     });  
     }
 
@@ -82,7 +83,7 @@ export default function Weather(props){
     <WeatherInfo data={weatherData}/>
 
 <section className="weather-forecast mt-4">
-    <WeatherForecast />
+    <WeatherForecast coordinates={weatherData.coordinates} />
 </section>
 
 </main>
