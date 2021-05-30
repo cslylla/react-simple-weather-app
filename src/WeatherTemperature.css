@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #ff7e1d;
+  --secondary-color: #f5f2ed;
+  --background-color: #ffce00;
+}
+
+.WeatherTemperature .currentTemperature {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.WeatherTemperature a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.WeatherTemperature .units {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  position: relative;
+  top: -5rem;
+}

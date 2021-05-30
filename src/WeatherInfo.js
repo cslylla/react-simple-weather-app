@@ -2,6 +2,7 @@ import React from "react";
 import FormatDayLong from "./FormatDayLong";
 import FormatTime from "./FormatTime";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 import sunrise from "./images/sunrise.png";
 import sunset from "./images/sunset.png";
 
@@ -11,7 +12,7 @@ export default function WeatherInfo(props){
     return(
     <div className="WeatherInfo">
     <div className="row main">
-    <div className="col-md-4 currentCity">
+    <div className="col-md-4 currentCity mb-3">
     <ul className="data">
         <li className="city text-capitalize"><h1>{props.data.city}</h1></li>
         <li><h2 className="text-capitalize">{props.data.description}</h2></li>
@@ -22,12 +23,7 @@ export default function WeatherInfo(props){
     </div>
 
     <div className="col-md-3 m-0 p-0 temperature">
-        <span className="currentTemperature">{props.data.temperature}</span>
-    <span className="units">
-    <a href="/" className="celsius active" title="Switch temperature to Celsius">°C{" "}</a>{" "}
-    |
-    <a href="/" className="fahrenheit" title="Switch temperature to Fahrenheit">°F</a>
-    </span>
+        <WeatherTemperature celsius={props.data.temperature} />
     </div>
 
     <div className="col-md-2 currentPicture m-0 p-0 text-center"><WeatherIcon code={props.data.icon} /></div>

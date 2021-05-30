@@ -73,10 +73,6 @@ body {
   font-weight: bold;
 }
 
-.Weather .temperature {
-  text-align: end;
-}
-
 .Weather .units a {
   font-weight: bold;
   font-size: 1.5rem;
