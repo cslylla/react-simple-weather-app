@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import ShowLoader from "./ShowLoader";
 import "./Weather.css";
 
 export default function Weather(props){
@@ -93,7 +94,7 @@ export default function Weather(props){
 
     return(
     <div className="Weather">
-        Loading
+        <ShowLoader />
     </div>
     )
     }    
