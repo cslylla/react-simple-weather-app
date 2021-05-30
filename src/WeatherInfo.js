@@ -22,11 +22,18 @@ export default function WeatherInfo(props){
     </ul>
     </div>
 
-    <div className="col-md-3 m-0 p-0 temperature">
+    <div className="col-md-5">
+    <div className="row">
+        <div className="col-md-12 m-0 p-0 temperature text-center">
         <WeatherTemperature celsius={props.data.temperature} />
+        </div>
     </div>
-
-    <div className="col-md-2 currentPicture m-0 p-0 text-center"><WeatherIcon code={props.data.icon} /></div>
+    <div className="row">
+        <div className="col-md-12 currentPicture mt-4 mb-4 p-0 text-center">
+           <WeatherIcon code={props.data.icon} /> 
+        </div>
+    </div>
+    </div>
 
     <div className="col-md-3">
     <ul className="details">
