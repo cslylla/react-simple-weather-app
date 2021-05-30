@@ -33,8 +33,8 @@ export default function WeatherInfo(props){
         <li><span>Feels like: {props.data.feelsLike}°C</span></li>
         <li><span>Wind: {props.data.wind}km/h</span></li>
         <li><span>Humidity: {props.data.humidity}%</span></li>
-        <li><img src={sunrise} alt="Sunrise symbol" width="45"/> <FormatTime timeStamp={props.data.sunrise} /></li>
-        <li><img src={sunset} alt="Sunset symbol" width="45"/><FormatTime timeStamp={props.data.sunset} /></li>
+        <li><img src={sunrise} className="me-2" alt="Sunrise symbol" width="45"/><FormatTime timeStamp={props.data.sunrise} /></li>
+        <li><img src={sunset} className="me-2" alt="Sunset symbol" width="45"/><FormatTime timeStamp={props.data.sunset} /></li>
     </ul>
     </div>
     </div>

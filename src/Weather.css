@@ -73,34 +73,6 @@ body {
   font-weight: bold;
 }
 
-.Weather .units a {
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.Weather .units a:hover {
-  text-decoration: none;
-}
-
-.Weather .units {
-  font-weight: bold;
-  font-size: 1.5rem;
-  position: relative;
-  top: -2rem;
-}
-
-.Weather .units .active {
-  text-decoration: none;
-  color: black;
-  cursor: default;
-}
-
-.Weather .units .active:hover {
-  text-decoration: none;
-}
-
 @media (max-width: 768px) {
   body {
     text-align: center;

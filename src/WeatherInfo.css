@@ -33,3 +33,10 @@
 .WeatherInfo .temperature {
   text-align: end;
 }
+
+@media (max-width: 768px) {
+  .WeatherTemperature,
+  .WeatherInfo h1 {
+    text-align: center;
+  }
+}
