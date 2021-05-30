@@ -1,5 +1,5 @@
 import React from "react";
-import FormatDayLong from "./FormatDayLong";
+import FormatDay from "./FormatDay";
 import FormatTime from "./FormatTime";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
@@ -17,7 +17,7 @@ export default function WeatherInfo(props){
         <li className="city text-capitalize"><h1>{props.data.city}</h1></li>
         <li><h2 className="text-capitalize">{props.data.description}</h2></li>
         <li><small>Last updated:</small></li>
-        <li className="day"><FormatDayLong timeStamp={props.data.currentTime} /></li>
+        <li className="day"><FormatDay timeStamp={props.data.currentTime} length="full"/></li>
         <li className="time"><FormatTime timeStamp={props.data.currentTime} /></li>
     </ul>
     </div>
