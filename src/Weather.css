@@ -53,26 +53,6 @@ body {
   box-shadow: 0 0 10px var(--primary-color);
 }
 
-.Weather .forecastDay {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-.forecastPicture {
-  color: var(--primary-color);
-  font-size: 4rem;
-}
-
-.forecastTemp {
-  font-size: 1.5rem;
-}
-
-.forecastMaxTemp {
-  font-weight: bold;
-}
-
 @media (max-width: 768px) {
   body {
     text-align: center;
