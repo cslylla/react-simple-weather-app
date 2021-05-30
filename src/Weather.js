@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-import Quote from "./Quote";
 import "./Weather.css";
 
 export default function Weather(props){
@@ -31,7 +30,7 @@ export default function Weather(props){
     } 
 
     function handleSubmit(event){
-        event.preventDafault();
+        event.preventDefault();
         search();
     }
 
@@ -67,10 +66,6 @@ export default function Weather(props){
 
 <section className="weather-forecast mt-4">
         Forecast
-</section>
-
-<section className="Quote">
-        <div className="Quote"><Quote /></div>
 </section>
 
 </main>
