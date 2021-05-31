@@ -2,10 +2,6 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import ShowLoader from "./ShowLoader";
 import WeatherForecastDay from "./WeatherForecastDay";
-import Loader from "react-loader-spinner";
-
-
-
 
 export default function WeatherForecast(props){
     let [ready, setReady] = useState(false);
