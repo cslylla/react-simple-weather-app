@@ -49,7 +49,7 @@ export default function Weather(props){
         let unit=`metric`;
         let apiUrl = `${apiEndPoint}lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
         axios.get(apiUrl).then(handleResponse);
-}
+    }
 
     function useMyLocation(event) {
         event.preventDefault();
@@ -59,6 +59,7 @@ export default function Weather(props){
     if (weatherData.ready){
     return(
     <div className="Weather">
+        
 <header>
     <div className="row justify-content-center">
     <div className ="col-md-8 p-0 m-0"> 
