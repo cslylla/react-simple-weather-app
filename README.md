@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Simple Weather App with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+*I created this project as a final work of the **SheCodes** React workshop. This project is a **weather forecast web application** which can be accessed through any web browser to see current weather and a five-day forecast. It provides temperatures and weather conditions.*
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### 1. Key features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The **single-site** web app is built with **React**, HTML and CSS; and it uses a free weather **API**
+- The layout of the page uses **bootstrap**
+- The UI design was created with **accessibility** in mind
+- The website is **responsible** and can be viewed in a web browser or on a mobile device
+- **Animated weather icons** show the current weather conditions
+- Current temperature can be displayed in **Celsius or Fahrenheit**
+- At the bottom of the page, you can see a **new quote** about mindfulness every time you visit the page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 2. Usage
 
-### `npm test`
+- You can **access** the application in any browser with an internet connection; no need to install anything
+- You can either:
+  - **Enter a location** into the search bar to look up data for the city and then click on search
+  - Click on the *My location* button and **enable the location** services in the popup of the browser to see data for your current location
+- The following data will be shown for the given location:
+  - name of the city
+  - current temperature in Celsius or Fahrenheit
+  - current weather conditions with animated icon
+  - current day and time
+  - "feels like" temperature, wind, humidity, sunset and sunrise times for the current day
+  - five-day forecast minimum and maximum temperatures with weather conditions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Starting page of the Weather app](/src/images/simple-weather-cover.png)
 
-### `npm run build`
+### 3. Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Visit the weather app [here](https://vigorous-swartz-f1085f.netlify.app/)
+- Further info about [SheCodes](https://www.shecodes.io/)
+- The used [weather API](https://openweathermap.org/api)
+- The used [animated weather icons](https://www.npmjs.com/package/react-animated-weather)
